@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner numberScanner = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        int firstNumber = scan.nextInt();
+        int firstNumber = numberScanner.nextInt();
         System.out.print("Enter the second number: ");
-        int secondNumber = scan.nextInt();
+        int secondNumber = numberScanner.nextInt();
 
         System.out.print("Enter the type of operation you want to perform (+, -, *, /, %): ");
-        String operation = scan.next();
+        String operation = numberScanner.next();
         int result = performOperation(firstNumber, secondNumber, operation);
         System.out.println("Your answer is: " + result);
     }
